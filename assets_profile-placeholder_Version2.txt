@@ -1,0 +1,8 @@
+Place your profile image and other assets here.
+
+- Save your profile photo as: assets/profile.jpg
+- Save a PDF copy of your resume as: resume.pdf (in the project root) to enable the Download Resume button.
+- Add project screenshots as: assets/project-1.png, assets/project-2.png, etc.
+
+To display the profile image in the header, add an <img> tag into the header area of index.html, for example:
+<img src="assets/profile.jpg" alt="Profile photo" style="width:96px;height:96px;border-radius:50%"/>

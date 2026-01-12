@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ariana Teresa Herrera — Portfolio</title>
+  <meta name="description" content="Portfolio of Ariana Teresa Herrera — IT & Business student focused on technical support, project coordination, and digital communication." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <h1 class="name">Ariana Teresa Herrera</h1>
+        <p class="location">Tacoma, WA</p>
+      </div>
+      <div class="contact-quick">
+        <!-- Public contact: LinkedIn (added). Replace GitHub href when ready. -->
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/ariana-h-0732312a2" aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="about" class="card">
+      <h2>Profile</h2>
+      <p class="lead">
+        Analytical and driven IT &amp; Business student with experience in technical support, project coordination, and digital communication. Known for strong organizational skills, bilingual communication (English/Spanish), and a customer-focused mindset. Proven ability to solve problems and manage projects in fast-paced environments.
+      </p>
+      <div class="hero-meta">
+        <!-- If you add a resume.pdf to the project root, the download button will work -->
+        <a class="btn-download" href="resume.pdf" download>Download Resume (PDF)</a>
+      </div>
+    </section>
+
+    <section id="education" class="card two-col">
+      <h2>Education</h2>
+      <div class="edu-left">
+        <h3>University of Washington Tacoma</h3>
+        <p class="muted"><em>Bachelor of Science in Information Technology</em><br/><em>Bachelor of Business Administration</em></p>
+      </div>
+      <div class="edu-right">
+        <p>Anticipated Graduation: June 2027<br/>Tacoma, WA</p>
+      </div>
+    </section>
+
+    <section id="skills" class="card">
+      <h2>Skills &amp; Proficiencies</h2>
+      <ul class="skills-list">
+        <li><strong>Technical:</strong> Project coordination, technical documentation, troubleshooting, ticketing systems</li>
+        <li><strong>Soft skills:</strong> Client communication, research &amp; analysis, problem solving, bilingual (English/Spanish)</li>
+        <li><strong>Tools &amp; software:</strong> Microsoft Office 365 (Word, Excel, PowerPoint, Outlook), Google Workspace (Docs, Sheets, Slides, Forms, Drive)</li>
+      </ul>
+    </section>
+
+    <section id="honors" class="card">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="simple-list">
+        <li>Dean’s List (2017–2021, 2024, 2025)</li>
+        <li>Valedictorian Graduate (2021)</li>
+        <li>The National Society of Leadership and Success — Member (2023–Present)</li>
+        <li>Washington State Opportunity Scholar (2021–Present)</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="card">
+      <h2>Projects</h2>
+      <article class="project">
+        <h3>Website Development — Technical Writer</h3>
+        <p>Documented a client-focused website project: created summaries, tracked feedback, and collaborated with the team to meet project goals.</p>
+      </article>
+      <!-- Add more projects by copying the block above -->
+    </section>
+
+    <section id="experience" class="card">
+      <h2>Experience</h2>
+
+      <article class="job">
+        <h3>IT Helpdesk Student Assistant — University of Washington</h3>
+        <p class="muted">July 2024 – Present — Tacoma, WA</p>
+        <ul class="simple-list">
+          <li>Provided technical support to staff, faculty, and students, resolving issues related to hardware, software, and network connectivity.</li>
+          <li>Troubleshot and resolved technology issues via phone, chat, and in-person, maintaining a high customer satisfaction rate.</li>
+          <li>Managed and performed regular maintenance on campus printers, including troubleshooting print queues, hardware issues, and supply levels.</li>
+          <li>Documented and tracked support requests using ticketing systems ensuring timely resolution and escalation of complex issues.</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <h3>Social Media Program Support Intern — University of Washington (Marketing &amp; Communications)</h3>
+        <p class="muted">Winter 2025 — Micro-Internship</p>
+        <ul class="simple-list">
+          <li>Conducted audits of UW Tacoma’s social media accounts and benchmarked best practices.</li>
+          <li>Delivered a final report with insights and recommendations to improve engagement.</li>
+          <li>Presented findings to stakeholders with data-backed strategies.</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contact" class="card">
+      <h2>Contact</h2>
+      <p>For inquiries or opportunities, please connect via my LinkedIn or download my resume. Direct phone number and email have been removed from this public site for privacy.</p>
+      <p class="muted"><a href="https://www.linkedin.com/in/ariana-h-0732312a2" target="_blank" rel="noopener noreferrer">LinkedIn: ariana-h-0732312a2</a> • <a href="#" aria-label="GitHub">GitHub</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Ariana Teresa Herrera — Tacoma, WA</p>
+    </div>
+  </footer>
+
+  <script>
+    // small script for dynamic year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

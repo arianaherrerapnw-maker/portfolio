@@ -1,0 +1,117 @@
+/* Simple, responsive portfolio styling - minimal and print-friendly */
+:root{
+  --bg:#ffffff;
+  --text:#111;
+  --muted:#555;
+  --accent:#0b6cff;
+  --card:#fbfbfb;
+  --max-width:980px;
+  --gap:22px;
+  --radius:8px;
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  color:var(--text);
+  background:var(--bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding-bottom:40px;
+}
+
+.container{
+  max-width:var(--max-width);
+  margin:0 auto;
+  padding:28px;
+}
+
+.site-header{
+  border-bottom:1px solid #e6e6e6;
+  background:linear-gradient(180deg, rgba(0,0,0,0.02), transparent);
+}
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.name{
+  margin:10px 0 4px 0;
+  font-size:28px;
+  letter-spacing:0.2px;
+}
+.location{
+  margin:0;
+  color:var(--muted);
+}
+
+/* Quick contact on header */
+.contact-quick a{
+  display:inline-block;
+  color:var(--muted);
+  margin-left:14px;
+  text-decoration:none;
+  font-size:14px;
+}
+.contact-quick a:hover{color:var(--accent)}
+
+/* Cards */
+.card{
+  background:var(--card);
+  border-radius:var(--radius);
+  padding:18px;
+  margin:18px 0;
+  box-shadow:0 0 0 1px rgba(0,0,0,0.02);
+}
+.lead{font-size:1rem; margin:0 0 8px 0}
+.muted{color:var(--muted); font-size:0.95rem}
+
+/* layout helpers */
+.two-col{
+  display:flex;
+  gap:24px;
+  align-items:flex-start;
+}
+.edu-left{flex:1}
+.edu-right{flex:0 0 220px; text-align:right}
+
+/* lists */
+.skills-list{list-style:none; padding:0; margin:0}
+.skills-list li{margin:8px 0}
+.simple-list{margin:8px 0 0 18px}
+
+/* buttons/links */
+a.btn-download{
+  display:inline-block;
+  padding:8px 12px;
+  background:var(--accent);
+  color:#fff;
+  text-decoration:none;
+  border-radius:6px;
+  margin-top:8px;
+}
+a.btn-download:hover{opacity:0.95}
+
+/* project/job spacing */
+.project, .job{margin:10px 0}
+
+/* footer */
+.site-footer{
+  margin-top:28px;
+  padding-top:14px;
+  border-top:1px solid #eee;
+  text-align:center;
+  color:var(--muted);
+}
+
+/* responsive */
+@media (max-width:720px){
+  .header-inner{flex-direction:column; align-items:flex-start}
+  .edu-right{display:none}
+  .two-col{flex-direction:column}
+  .container{padding:18px}
+}
